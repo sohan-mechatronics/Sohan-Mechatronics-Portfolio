@@ -10,7 +10,7 @@ Hi, I'm **Sohan Kumar**, a Mechatronics Engineering student with a Diploma in El
 ### Education
 
 * Diploma in Electrical Engineering
-* B.Tech Mechatronics Engineering Student
+* B.E Mechatronics Engineering Student
 
 ### Areas of Interest
 
