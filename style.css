@@ -1,355 +1,1963 @@
-/* ========= RESET ========= */
+/* =====================================
+🌑 RESET
+===================================== */
+
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family:'Poppins',sans-serif;
+}
+
+html{
+  scroll-behavior:smooth;
 }
 
 body{
-  background: linear-gradient(135deg,#0f172a,#1e293b);
-  color:white;
+  background:#0a0f14;
+  color:#fff;
   line-height:1.6;
-  padding-bottom:50px;
 }
 
-/* ========= HERO ========= */
-.hero{
-  text-align:center;
+
+/* =====================================
+🌟 UNIVERSAL SECTION
+===================================== */
+
+section{
+  width:100%;
   padding:60px 20px;
-  animation: fadeDown 1s ease;
 }
 
-.name{
-  font-size:40px;
-  font-weight:700;
-  margin-bottom:10px;
-  color:cyan;
+
+/* =====================================
+💎 PREMIUM CARD (MAIN FIX)
+===================================== */
+card{
+  width:95%;
+  max-width:1350px;
+  margin:40px auto;
+  padding:40px;
+
+  height:auto;
+  display:block;
+
+  background: rgba(255,255,255,.07);
+  backdrop-filter: blur(10px) brightness(1.1);
+
+  border: 1px solid rgba(255,255,255,.08);   /* ⭐ ADD THIS */
+
+  border-radius:22px;
+
+  position: relative;
+  z-index:10;
+
+  transition: all .3s ease;
+}
+hero-card:hover{
+  box-shadow:
+    0 0 25px rgba(0,255,200,.45),
+    0 0 55px rgba(0,255,200,.25);
 }
 
-.tagline{
-  margin:10px 0 20px;
-  font-size:18px;
-  opacity:0.9;
-}
-
-/* ========= PROFILE PIC ========= */
-.profile-pic{
-  width:160px;
-  height:160px;
-  border-radius:50%;
-  object-fit:cover;
-  border:4px solid cyan;
-  box-shadow:0 0 25px cyan;
-  margin:20px 0;
-  transition:0.4s;
-}
-
-.profile-pic:hover{
-  transform:scale(1.08);
-}
-
-/* ========= CONTACT ========= */
-.contact-row a{
-  color:white;
-  margin:0 10px;
-  text-decoration:none;
-}
-
-.contact-row a:hover{
-  color:cyan;
-}
-
-/* ========= BUTTONS ========= */
-.btn, .btn-outline{
-  padding:10px 20px;
-  border-radius:8px;
-  text-decoration:none;
-  margin:5px;
-  font-weight:bold;
-  display:inline-block;
-  transition:0.3s;
-}
-
-.btn{
-  background:cyan;
-  color:black;
-}
-
-.btn:hover{
-  transform:translateY(-3px);
-}
-
-.btn-outline{
-  border:2px solid cyan;
-  color:cyan;
-}
-
-.btn-outline:hover{
-  background:cyan;
-  color:black;
-}
-
-/* ========= CARD SECTIONS ========= */
-.card{
-  background:#1e293b;
-  margin:30px auto;
-  padding:25px;
-  border-radius:12px;
-  width:90%;
-  max-width:1000px;
-  box-shadow:0 8px 25px rgba(0,0,0,0.5);
-  animation: fadeUp 1s ease;
-}
+/* =====================================
+🟢 HEADINGS PERFECT TOP + CENTER
+===================================== */
 
 .card h2{
-  margin-bottom:15px;
-  color:cyan;
+  text-align:center;
+  margin-bottom:0px;
+  font-size:26px;
 }
 
-/* ========= LIST ========= */
-ul{
-  margin-left:20px;
-}
 
-/* ========= SKILLS GRID ========= */
-.skill-grid{
-  display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
-}
+/* =====================================
+🔥 HERO SECTION
+===================================== */
+hero{
+  min-height:100vh;
 
-.skill-card{
-  background:#0f172a;
-  padding:15px;
-  border-radius:10px;
-  transition:0.3s;
-}
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 
-.skill-card:hover{
-  transform:translateY(-6px);
-  box-shadow:0 0 15px cyan;
-}
+  justify-content:flex-start;
 
-/* ========= PROJECT GRID ========= */
-.project-grid{
-  display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-  gap:25px;
-}
+  gap:10px;
+  padding-top:15px;
 
-.project-card{
-  background:#0f172a;
-  padding:15px;
-  border-radius:12px;
-  transition:0.3s;
   text-align:center;
 }
 
-.project-card img{
-  width:100%;
-  border-radius:10px;
-  margin-bottom:10px;
-}
-
-.project-card:hover{
-  transform:translateY(-8px);
-  box-shadow:0 0 20px cyan;
-}
-
-/* ========= PROJECT BUTTONS ========= */
-.project-btn, .demo-btn{
-  padding:8px 14px;
-  margin:6px;
-  border-radius:6px;
-  text-decoration:none;
-  display:inline-block;
-  font-size:14px;
-}
-
-.project-btn{
-  background:cyan;
-  color:black;
-}
-
-.demo-btn{
-  border:2px solid cyan;
-  color:cyan;
-}
-
-/* ========= SOFT SKILLS ========= */
-.soft-list li{
-  margin:6px 0;
-}
-
-/* ========= FOOTER ========= */
-.footer{
-  text-align:center;
-  margin-top:40px;
-  opacity:0.7;
-}
-
-/* ========= ANIMATIONS ========= */
-@keyframes fadeDown{
-  from{opacity:0; transform:translateY(-40px);}
-  to{opacity:1; transform:translateY(0);}
-}
-
-@keyframes fadeUp{
-  from{opacity:0; transform:translateY(40px);}
-  to{opacity:1; transform:translateY(0);}
-}
-
-/* Glow circle behind photo */
 .profile-pic{
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #00c9a7;
-    box-shadow: 0 0 25px #00c9a7, 0 0 60px rgba(0,201,167,0.4);
-    margin-top: 15px;
+  width:160px !important;
+  height:160px !important;
+
+  border-radius:50% !important;
+
+  object-fit:cover !important;
+
+  display:block;
+  margin:0 auto 15px;
+
+  border:3px solid #00ffe7;
+  box-shadow:0 0 25px #00ffe7;
 }
 
-/* Name styling */
 .name{
-    font-size: 40px;
-    font-weight: bold;
-    color: #00e6c0;
-    margin-bottom: 10px;
+  font-size:42px;
+  font-weight:700;
 }
 
-/* Tagline text */
 .tagline{
-    font-size: 18px;
-    opacity: 0.9;
-    margin-top: 10px;
+  color:#00ffe7;
+  margin-bottom:25px;
 }
 
-/* ================= BUTTONS (Resume / ATS / GitHub) ================= */
 
+/* =====================================
+🔥 HERO CARD
+===================================== */
+
+.hero-card{
+  width:95%;
+  max-width:900px;
+  padding:35px;
+
+  background:rgba(255,255,255,.05);
+  backdrop-filter:blur(12px);
+
+  border-radius:20px;
+
+  box-shadow:0 0 25px rgba(0,255,255,.2);
+
+  text-align:center;
+}
+
+
+/* =====================================
+🟢 BUTTONS
+===================================== */
+
+.contact-row,
 .buttons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    width: 100%;
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  justify-content:center;
+  margin-top:15px;
 }
 
 .btn,
-.btn-outline{
-    padding: 10px 22px;
-    border-radius: 8px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.3s ease;
+.btn-outline,
+.contact-btn{
+  padding:10px 18px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:600;
+  transition:.3s;
 }
 
-/* Solid button (Resume) */
 .btn{
-    background: #00c9a7;
-    color: black;
+  background:#00ffe7;
+  color:#001b20;
 }
 
-.btn:hover{
-    background: #00e6c0;
-    transform: translateY(-2px);
+.btn-outline,
+.contact-btn{
+  background:rgba(255,255,255,.08);
+  color:#fff;
+  border:1px solid rgba(0,255,255,.4);
 }
 
-/* Outline button (ATS + GitHub) */
-.btn-outline{
-    border: 2px solid #00c9a7;
-    color: #00c9a7;
+.btn:hover,
+.btn-outline:hover,
+.contact-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 0 20px #00ffe7;
 }
 
-.btn-outline:hover{
-    background: #00c9a7;
-    color: black;
-    transform: translateY(-2px);
+
+/* =====================================
+🌟 ALL GRIDS (perfect alignment)
+===================================== */
+
+.edu-grid,
+.ach-grid,
+.foundation-grid,
+.skill-grid,
+.project-grid,
+.soft-grid{
+
+    display:grid;
+    gap:22px;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    width:100%;
 }
 
-/* ================= PREMIUM POLISH EFFECTS ================= */
+/* =====================================
+🟢 SMALL CARDS
+(no fixed height → auto content only)
+===================================== */
 
-/* Smooth scroll */
+.edu-item,
+.ach-item,
+.foundation-item,
+.skill-card,
+.project-card,
+.soft-item{
+
+  background:rgba(255,255,255,.06);
+
+  padding:18px;
+
+  border-radius:14px;
+
+  height:auto;
+
+  transition:.3s;
+}
+
+.edu-item:hover,
+.ach-item:hover,
+.foundation-item:hover,
+.skill-card:hover,
+.project-card:hover,
+.soft-item:hover{
+  transform:translateY(-4px);
+  box-shadow:0 0 20px rgba(0,255,255,.3);
+}
+
+
+/* =====================================
+🟢 LIST CLEAN
+===================================== */
+
+ul{
+  margin-top:10px;
+  padding-left:18px;
+}
+
+
+/* =====================================
+🔥 FOOTER
+===================================== */
+
+.footer{
+  text-align:center;
+}
+
+
+/* =====================================
+📱 MOBILE
+===================================== */
+
+@media(max-width:600px){
+
+  .name{
+    font-size:28px;
+  }
+
+  .card{
+    padding:25px;
+  }
+
+}
+.project-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:22px;
+
+  /* ⭐ MOST IMPORTANT */
+  align-items:start;
+}
+.project-card{
+  height:auto;
+  min-height:unset;
+}
+/* ===== SOFT SKILLS GRID CLEAN ===== */
+
+.soft-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:18px;
+  margin-top:20px;
+}
+
+.soft-item{
+  background:rgba(255,255,255,.06);
+  padding:18px 22px;
+  border-radius:14px;
+
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  transition:.25s;
+}
+
+.soft-item:hover{
+  transform:translateY(-4px);
+  box-shadow:0 0 25px rgba(0,255,255,.35);
+}
+project-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:20px;
+
+  align-items:start;   /* 🔥 MOST IMPORTANT FIX */
+}
+/* ================= SOFT SKILLS ================= */
+
+.soft-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.soft-item{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: rgba(255,255,255,0.05);
+  padding: 14px 18px;
+
+  border-radius: 14px;
+  backdrop-filter: blur(8px);
+
+  transition: 0.3s;
+}
+
+.soft-item:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 0 18px #00ffe155;
+}
+
+.soft-item i{
+  font-size: 18px;
+  color: #00ffe1;
+}
+
+.soft-item p{
+  margin: 0;
+  font-size: 14px;
+}
+/* =========================================
+   🔥 PREMIUM PORTFOLIO FINAL POLISH PACK
+   Paste at VERY END of style.css
+========================================= */
+
+
+/* ===== Smooth Scroll ===== */
 html{
-    scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 
 
-/* Card hover lift */
+/* ===== Center Everything ===== */
+body{
+  background: radial-gradient(circle at top,#0a0f14,#05080c 70%);
+  overflow-x:hidden;
+}
+
+
+/* ===== Section Center ===== */
+section{
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+
+
+/* ===== Main Card Look (Glass + Glow) ===== */
 .card{
-    transition: 0.35s ease;
+  width:92%;
+  max-width:1400px;
+  margin:70px auto;
+  padding:60px 70px;
+
+  background:rgba(255,255,255,.05);
+  backdrop-filter:blur(14px);
+
+  border-radius:22px;
+
+  box-shadow:
+      0 0 30px rgba(0,255,255,.12),
+      inset 0 0 25px rgba(0,255,255,.05);
+
+  transition:.35s ease;
+}
+
+
+/* hover lift */
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:
+      0 0 55px rgba(0,255,255,.35),
+      inset 0 0 25px rgba(0,255,255,.08);
+}
+
+
+
+/* ===== Headings ===== */
+h1,h2,h3{
+  text-align:center;
+  letter-spacing:.6px;
+}
+
+h2{
+  margin-bottom:35px;
+}
+
+
+
+/* ===== Grid Layouts ===== */
+.project-grid,
+.soft-grid,
+.skill-grid{
+  display:grid;
+  gap:25px;
+}
+
+
+
+/* projects */
+.project-grid{
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+}
+
+
+/* soft skills */
+.soft-grid{
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+}
+
+
+
+/* ===== Project Cards ===== */
+.project-card{
+  background:rgba(255,255,255,.06);
+  padding:25px;
+
+  border-radius:18px;
+
+  transition:.3s;
+  border:1px solid rgba(255,255,255,.08);
+}
+
+.project-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 0 35px rgba(0,255,255,.35);
+}
+
+
+
+/* project icons/images */
+.project-img{
+  width:60px;
+  margin-bottom:12px;
+  filter:drop-shadow(0 0 10px cyan);
+}
+
+
+
+/* ===== Soft Skill Pills ===== */
+.soft-item{
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  padding:15px 18px;
+
+  border-radius:14px;
+
+  background:rgba(255,255,255,.06);
+
+  transition:.3s;
+}
+
+.soft-item:hover{
+  transform:translateY(-4px);
+  box-shadow:0 0 25px rgba(0,255,255,.35);
+}
+
+
+
+/* ===== Buttons ===== */
+button,
+.btn,
+a.btn{
+  background:rgba(0,255,255,.12);
+  border:1px solid rgba(0,255,255,.5);
+
+  padding:10px 22px;
+  border-radius:10px;
+
+  color:white;
+
+  transition:.3s;
+}
+
+button:hover,
+.btn:hover,
+a.btn:hover{
+  transform:scale(1.08);
+  box-shadow:0 0 25px cyan;
+}
+
+
+
+/* ===== Download Resume Special Glow ===== */
+.download-btn:hover{
+  animation:pulseGlow .9s infinite alternate;
+}
+
+@keyframes pulseGlow{
+  from{box-shadow:0 0 15px cyan;}
+  to{box-shadow:0 0 35px cyan;}
+}
+
+
+
+/* ===== Scroll Reveal Support ===== */
+.reveal{
+  opacity:0;
+  transform:translateY(60px);
+  transition:all .8s ease;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+
+
+
+/* ===== Hero Image Glow ===== */
+.profile-img,
+.hero-img{
+  box-shadow:0 0 45px cyan;
+  border-radius:50%;
+}
+
+
+
+/* ===== Footer ===== */
+footer{
+  text-align:center;
+  opacity:.85;
+}
+
+
+
+/* ===== Mobile Responsive ===== */
+@media(max-width:768px){
+
+  .card{
+    padding:35px 20px;
+  }
+
+  .project-grid,
+  .soft-grid{
+    grid-template-columns:1fr;
+  }
+
+  h1{
+    font-size:26px;
+  }
+
+  h2{
+    font-size:20px;
+  }
+}
+/* =================================
+   🔥 NEXT LEVEL EFFECTS PACK
+================================= */
+
+
+/* ===== Cursor Glow ===== */
+.cursor-glow{
+  position:fixed;
+  width:22px;
+  height:22px;
+  border-radius:50%;
+  background:cyan;
+  pointer-events:none;
+  mix-blend-mode:screen;
+  box-shadow:0 0 25px cyan,0 0 60px cyan;
+  transform:translate(-50%,-50%);
+  z-index:9999;
+}
+
+
+/* ===== Page Loader ===== */
+#loader{
+  position:fixed;
+  inset:0;
+  background:#05080c;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:10000;
+}
+
+.loader-circle{
+  width:65px;
+  height:65px;
+  border-radius:50%;
+  border:6px solid rgba(0,255,255,.2);
+  border-top:6px solid cyan;
+  animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+  100%{ transform:rotate(360deg); }
+}
+
+
+/* ===== Parallax Depth ===== */
+.parallax{
+  transform:translateZ(0);
+  transition:transform .2s linear;
+}
+
+
+/* ===== Animated Background Particles ===== */
+#particles{
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  overflow:hidden;
+}
+
+.particle{
+  position:absolute;
+  width:4px;
+  height:4px;
+  background:rgba(0,255,255,.5);
+  border-radius:50%;
+  animation:float 8s linear infinite;
+}
+
+@keyframes float{
+  from{
+    transform:translateY(100vh);
+    opacity:0;
+  }
+  30%{opacity:1;}
+  to{
+    transform:translateY(-10vh);
+    opacity:0;
+  }
+}
+/* =================================================
+   🔥 NEXT LEVEL EFFECTS CSS
+   Loader + Cursor + Particles + Parallax polish
+================================================= */
+
+
+/* ===== Loader ===== */
+#loader{
+  position:fixed;
+  inset:0;
+  background:#0b0f14;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+.loader-circle{
+  width:60px;
+  height:60px;
+  border:5px solid #1e293b;
+  border-top:5px solid #00ffe0;
+  border-radius:50%;
+  animation:spin 0.8s linear infinite;
+}
+
+@keyframes spin{
+  to{ transform:rotate(360deg); }
+}
+
+
+
+/* ===== Cursor Glow ===== */
+.cursor-glow{
+  position:fixed;
+  width:35px;
+  height:35px;
+  background:#00ffe0;
+  border-radius:50%;
+  pointer-events:none;
+  transform:translate(-50%,-50%);
+  filter:blur(15px);
+  opacity:.45;
+  z-index:9998;
+}
+
+
+
+/* ===== Particles Background ===== */
+#particles{
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  overflow:hidden;
+}
+
+.particle{
+  position:absolute;
+  width:4px;
+  height:4px;
+  background:#00ffe0;
+  border-radius:50%;
+  opacity:.4;
+  animation:float linear infinite;
+}
+
+@keyframes float{
+  from{ transform:translateY(100vh); }
+  to{ transform:translateY(-10vh); }
+}
+
+
+
+/* ===== Smooth Card Animation (Parallax friendly) ===== */
+.card{
+  transition:transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .card:hover{
-    transform: translateY(-8px);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.45);
+  box-shadow:0 0 25px rgba(0,255,224,0.25);
 }
 
 
-/* Button glow hover */
-.btn:hover,
-.btn-outline:hover{
-    box-shadow: 0 0 18px #00c9a7;
+
+/* ===== Scroll Smooth ===== */
+html{
+  scroll-behavior:smooth;
 }
 
 
-/* Soft fade animation on load */
+
+/* ===== Mobile performance ===== */
+@media(max-width:768px){
+
+  .cursor-glow{
+    display:none;   /* mobile me laggy lagta hai */
+  }
+
+  #particles{
+    opacity:.25;
+  }
+
+}
+/* ================= LOADER ================= */
+#loader{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:#0d1117;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+.loader-circle{
+  width:60px;
+  height:60px;
+  border:6px solid rgba(0,255,255,.2);
+  border-top:6px solid cyan;
+  border-radius:50%;
+  animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+  to{transform:rotate(360deg);}
+}
+
+
+/* ================= CURSOR GLOW ================= */
+.cursor-glow{
+  position:fixed;
+  width:25px;
+  height:25px;
+  border-radius:50%;
+  background:cyan;
+  box-shadow:0 0 25px cyan,0 0 50px cyan;
+  pointer-events:none;
+  transform:translate(-50%,-50%);
+  z-index:9998;
+}
+
+
+/* ================= PARTICLES ================= */
+#particles{
+  position:fixed;
+  width:100%;
+  height:100%;
+  z-index:-1;
+  overflow:hidden;
+}
+
+.particle{
+  position:absolute;
+  width:6px;
+  height:6px;
+  background:rgba(0,255,255,.6);
+  border-radius:50%;
+  animation:float linear infinite;
+}
+
+@keyframes float{
+  from{transform:translateY(100vh);}
+  to{transform:translateY(-10vh);}
+}
+/* ===== Training Section Center Alignment Fix ===== */
+
+/* heading center */
+.card h2{
+  text-align:center;
+}
+
+/* pura box center */
+.training-box{
+  max-width:900px;
+  margin:0 auto;
+  text-align:center;
+}
+
+/* bullets center looking */
+.points{
+  list-style-position:inside;
+  padding:0;
+  text-align:left;   /* readable look */
+  display:inline-block;
+}
+/* ===== TRAINING SECTION PERFECT CENTER FIX ===== */
+
+/* pura card ko center karo */
 .card{
-    animation: fadeUp 0.6s ease;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+}
+
+/* andar ka box limited width */
+.training-box{
+  width:100%;
+  max-width:900px;
+  margin:0 auto;
+}
+
+/* bullets readable */
+.points{
+  text-align:left;
+  display:inline-block;
+  margin-top:15px;
+}
+/* ===== TRAINING SECTION PERFECT CENTER FIX ===== */
+
+/* pura card ko center karo */
+.card{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+}
+
+/* andar ka box limited width */
+.training-box{
+  width:100%;
+  max-width:900px;
+  margin:0 auto;
+}
+
+/* bullets readable */
+.points{
+  text-align:left;
+  display:inline-block;
+  margin-top:15px;
+}
+.card{
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: radial-gradient(
+    circle at var(--x,50%) var(--y,50%),
+    rgba(0,255,200,0.35),
+    transparent 60%
+  );
+
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.card:hover::before{
+  opacity: 1;
+}
+card{
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+  transform-style: preserve-3d;
+}
+
+.card:hover{
+  box-shadow: 0 25px 60px rgba(0,255,200,0.35);
+}
+.btn{
+  display:inline-block;
+  transition: transform 0.2s ease;
+}
+/* ======================================================
+   🔥 ULTIMATE PORTFOLIO PREMIUM EFFECT PACK (CSS ONLY)
+   Paste at LAST of style.css
+   ====================================================== */
+
+
+/* ===== GLOBAL SMOOTHNESS ===== */
+*{
+  transition: all .3s ease;
 }
 
 
-/* Hero content animation */
-.hero h1,
-.hero .tagline,
+/* ======================================================
+   1️⃣ PREMIUM CARD BASE STYLE
+   ====================================================== */
+
+.card{
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+
+  background: rgba(20,25,30,.75);
+  backdrop-filter: blur(12px);
+
+  transform-style: preserve-3d;
+  perspective: 1000px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,.4);
+}
+
+
+/* ======================================================
+   2️⃣ GLOW EFFECT (hover bright neon)
+   ====================================================== */
+
+.card::before{
+  content:"";
+  position:absolute;
+  inset:-3px;
+  border-radius:25px;
+
+  background: linear-gradient(
+      45deg,
+      #00fff2,
+      #00ff9d,
+      #00fff2
+  );
+
+  filter: blur(30px);
+  opacity:0;
+  z-index:-1;
+  transition:.4s;
+}
+
+.card:hover::before{
+  opacity:1;
+}
+
+
+/* ======================================================
+   3️⃣ 3D TILT + FLOAT
+   ====================================================== */
+
+.card:hover{
+  transform:
+      translateY(-10px)
+      rotateX(6deg)
+      rotateY(-6deg)
+      scale(1.03);
+
+  box-shadow:
+      0 30px 80px rgba(0,255,200,.35);
+}
+
+
+/* ======================================================
+   4️⃣ MAGNETIC BUTTONS
+   ====================================================== */
+
+.btn{
+  display:inline-block;
+  padding:10px 22px;
+  border-radius:12px;
+
+  background:rgba(0,255,200,.08);
+  border:1px solid rgba(0,255,200,.4);
+
+  cursor:pointer;
+}
+
+.btn:hover{
+  transform: translateY(-4px) scale(1.08);
+  background:#00ffe0;
+  color:#000;
+
+  box-shadow:
+      0 0 25px #00ffe0,
+      0 0 60px #00ffe0;
+}
+
+
+/* ======================================================
+   5️⃣ SMOOTH FADE REVEAL (page load animation)
+   ====================================================== */
+
+.reveal{
+  opacity:0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp{
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+
+/* ======================================================
+   6️⃣ TYPING INTRO EFFECT
+   ====================================================== */
+
+.typing{
+  width:0;
+  white-space:nowrap;
+  overflow:hidden;
+
+  border-right:3px solid #00fff2;
+
+  animation:
+    typing 4s steps(45,end) forwards,
+    blink .7s infinite;
+}
+
+@keyframes typing{
+  to{ width:100%; }
+}
+
+@keyframes blink{
+  50%{ border-color:transparent; }
+}
+
+
+/* ======================================================
+   7️⃣ EXTRA FLOATING ANIMATION (subtle life)
+   ====================================================== */
+
+@keyframes float{
+  0%{transform:translateY(0)}
+  50%{transform:translateY(-6px)}
+  100%{transform:translateY(0)}
+}
+
+.card{
+  animation: float 6s ease-in-out infinite;
+}
+
+
+/* ======================================================
+   8️⃣ SOFT TEXT GLOW
+   ====================================================== */
+
+h1,h2,h3{
+  text-shadow: 0 0 12px rgba(0,255,200,.4);
+}
+/* =====================================
+   💎 SUPER INTENSE CARD GLOW
+   ===================================== */
+
+.card{
+  position:relative;
+  overflow:hidden;
+  border-radius:25px;
+}
+
+
+/* base glow */
+.card::before{
+  content:"";
+  position:absolute;
+  inset:-4px;
+  border-radius:inherit;
+
+  background: linear-gradient(45deg,#00fff2,#00ffae,#00fff2);
+
+  filter: blur(35px);
+  opacity:.25;
+  z-index:-1;
+}
+
+
+/* 🔥 HOVER BLAST GLOW */
+.card:hover::before{
+  opacity:1;
+  filter: blur(55px);
+}
+
+
+/* extra shadow punch */
+.card:hover{
+  box-shadow:
+    0 0 30px #00fff2,
+    0 0 70px rgba(0,255,200,.7),
+    0 0 120px rgba(0,255,200,.6);
+}
+/* =====================================
+   ✨ FLOATING PARTICLES (CSS ONLY)
+   ===================================== */
+
+.particles{
+  position:fixed;
+  inset:0;
+  overflow:hidden;
+  pointer-events:none;
+  z-index:0;
+}
+
+/* create many circles */
+.particles::before{
+  content:"";
+  position:absolute;
+  width:4px;
+  height:4px;
+  background:#00fff2;
+  border-radius:50%;
+
+  box-shadow:
+    40px 60px #00fff2,
+    120px 20px #00fff2,
+    200px 100px #00fff2,
+    300px 40px #00fff2,
+    380px 120px #00fff2,
+    460px 80px #00fff2,
+    540px 160px #00fff2,
+    620px 60px #00fff2;
+
+  animation: floatParticles 10s linear infinite;
+  opacity:.6;
+}
+
+@keyframes floatParticles{
+  from{
+    transform: translateY(120%);
+  }
+  to{
+    transform: translateY(-120%);
+  }
+}
+hero{
+  position: relative;
+}
+
+.particles{
+  position:absolute;
+  inset:0;
+  z-index:0;
+}
+
+.hero > *{
+  position:relative;
+  z-index:1;
+}
+/* ================= PARTICLES BACKGROUND ================= */
+
+.particles{
+  position:absolute;
+  inset:0;
+  overflow:hidden;
+  z-index:0;
+  pointer-events:none;
+}
+
+/* small glowing dots */
+.particles::before{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+
+  background-image:
+    radial-gradient(circle,#00ffe7 2px,transparent 2px);
+
+  background-size:60px 60px;
+
+  opacity:.35;
+
+  animation:particlesMove 12s linear infinite;
+}
+
+/* moving animation */
+@keyframes particlesMove{
+  from{
+    transform:translateY(0);
+  }
+  to{
+    transform:translateY(-120px);
+  }
+}
+hero{
+  position: relative;
+  overflow: hidden;
+
+  background: linear-gradient(
+    135deg,
+    #061a1a,
+    #0b2e2e,
+    #063c3c,
+    #0b2e2e,
+    #061a1a
+  );
+
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+
+  box-shadow: inset 0 0 150px rgba(0,255,200,.12);
+}
+
+.particles::before{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  background-image: radial-gradient(circle,#00ffe7 2px,transparent 2px);
+  background-size:60px 60px;
+  opacity:.5;
+  animation:particlesMove 12s linear infinite;
+}
+
+@keyframes particlesMove{
+  from{transform:translateY(0);}
+  to{transform:translateY(-120px);}
+}
+.hero{
+  position:relative;
+  overflow:hidden;
+}
+
+/* container */
+.particles{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:2;            /* IMPORTANT */
+  pointer-events:none;
+}
+
+/* each dot */
+.particle{
+  position:absolute;
+  width:6px;
+  height:6px;
+  background:#00ffe7;
+  border-radius:50%;
+  opacity:.6;
+
+  animation: float 6s linear infinite;
+}
+
+/* animation */
+@keyframes float{
+  from{ transform:translateY(0); }
+  to{ transform:translateY(-120vh); }
+}
+/* ================= PARTICLES ================= */
+
+.hero{
+  position:relative;
+  overflow:hidden;
+}
+
+.particles{
+  position:absolute;
+  inset:0;
+  z-index:0;          /* background me */
+  pointer-events:none;
+}
+
+.particle{
+  position:absolute;
+  width:5px;
+  height:5px;
+  background:#00ffe0;
+  border-radius:50%;
+  opacity:.7;
+
+  animation: float 8s linear infinite;
+}
+
+@keyframes float{
+  from{
+    transform: translateY(0);
+    opacity:.8;
+  }
+  to{
+    transform: translateY(-120vh);
+    opacity:0;
+  }
+}
+
+/* ===== FINAL FIX : CARDS STATIC ===== */
+
+.card{
+  background: rgba(15,20,22,0.95);
+  border-radius: 25px;
+  padding: 35px;
+  transition: .3s ease;
+}
+
+.card:hover{
+  box-shadow:
+  0 8px 20px rgba(0,255,200,.18),
+  0 0 30px rgba(0,255,200,.08)
+}
+/* ===============================
+   HERO CARD FINAL GLOW (STATIC + HOVER ONLY)
+   =============================== */
+.hero-card{
+  position: relative;
+
+  border-radius: 25px;   /* FIXED */
+
+  overflow: hidden;
+
+  box-shadow: 0 0 25px rgba(0,255,200,.25);
+}
+/* ===== NO CARD MOVEMENT FINAL ===== */
+.card,
+.card:hover,
+.hero-card,
+.hero-card:hover{
+  transform:none !important;
+  translate:none !important;
+  animation:none !important;
+}
+
+/* glow border layer */
+hero-card.card::before{
+  content:"";
+  position:absolute;
+  inset:-3px;
+  border-radius:inherit;
+
+  background:radial-gradient(45deg,#00fff2,#00fae0,#00fff2);
+  filter:blur(6px);
+  opacity:.35;
+  transition:opacity .3s ease;
+
+  z-index:-1;
+  pointer-events:none;
+}
+
+
+/* ⭐ ONLY glow on hover (NO movement) */
+.hero-card.card:hover{
+  transform: none;   /* stop jumping */
+  box-shadow:
+    0 0 20px #00fff2,
+    0 0 35px rgba(0,255,200,.35);
+}
+
+.hero-card.card:hover::before{
+  opacity: 1;
+}
+/* ================================
+   🔥 FINAL HERO CARD FIX (NO DELETE)
+   paste at VERY END
+================================ */
+
+/* hero ko normal block bana do */
+.hero{
+  display:block !important;
+  text-align:center;
+}
+
+
+/* sab content ek hi card me force karo */
+.hero > *{
+  width:100%;
+}
+
+
+/* main card perfect center */
+.hero .card{
+  max-width:900px !important;
+  margin:60px auto !important;
+}
+
+
+/* buttons always inside card */
 .contact-row,
 .buttons{
-    animation: fadeDown 0.8s ease;
+  display:flex !important;
+  flex-wrap:wrap !important;
+  justify-content:center !important;
+  gap:12px;
+  width:100%;
 }
 
 
-/* Typing text glow */
-#typing{
-    color: #00e6c0;
-    font-weight: 600;
+/* prevent overflow */
+.card{
+  overflow:hidden !important;
+}
+/* ===== ALL BUTTONS SAME HOVER ===== */
+
+.card a,
+.card button{
+  color:#00ffe7;
+  text-decoration:none;
+  transition:0.25s ease;
+}
+
+.card a:hover,
+.card button:hover{
+  color:#ffffff;
+  transform:scale(1.05); /* small pop effect */
+}
+/* ===== BUTTON GLOW HOVER ===== */
+.card a,
+.card button{
+  transition: all .3s ease;
+  border:1px solid rgba(0,255,255,.4);
+}
+
+.card a:hover,
+.card button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px #00ffe7, 0 0 30px rgba(0,255,255,.6);
+  background: rgba(0,255,255,.12);
+  color:#fff;
+}
+/* ===== CARD SCALE HOVER ===== */
+.card{
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.card:hover{
+  transform: scale(1.02);
+  box-shadow: 0 0 40px rgba(0,255,255,.35);
+}
+@keyframes gradientMove{
+  0%{ background-position: 0% 50%; }
+  50%{ background-position: 100% 50%; }
+  100%{ background-position: 0% 50%; }
+}
+* /*FULL PAGE ANIMATED BACKGROUND*/ 
+
+body{
+  margin:0;
+
+  background: linear-gradient(
+    135deg,
+    #061a1a,
+    #0b2e2e,
+    #062626,
+    #0f3a3a
+  );
+
+  background-size: 400% 400%;
+
+  animation: pageGradientMove 12s ease infinite;
 }
 
 
-/* Scrollbar styling (pro look) */
-::-webkit-scrollbar{
-    width: 8px;
+/* animation */
+@keyframes pageGradientMove{
+  0%{ background-position: 0% 50%; }
+  50%{ background-position: 100% 50%; }
+  100%{ background-position: 0% 50%; }
+}
+/* =========================
+   FINAL HARD STOP – NO CARD MOVE
+   ========================= */
+
+card {
+    transition: all 0.4s ease;
 }
 
-::-webkit-scrollbar-track{
-    background: #0f2027;
+.card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 0 20px #00ffcc,
+                0 0 40px #00ffcc,
+                0 0 60px #00ffcc;
+}
+/* ================= HERO ================= */
+
+.hero{
+    min-height:100vh;
+    background:#0a0f14;
+    color:white;
+    text-align:center;
+    padding-top:70px;
+    position:relative;
+    overflow:hidden;
 }
 
-::-webkit-scrollbar-thumb{
-    background: #00c9a7;
-    border-radius: 10px;
+/* animated glow bg */
+.hero-bg{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(135deg,#00ffe7,#0077ff,#00ffe7);
+    background-size:300% 300%;
+    opacity:.12;
+    animation:bgMove 12s infinite linear;
 }
 
-/* ================= TYPING EFFECT FINAL ================= */
-
-#typing{
-    color: #00e6c0;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-shadow: 0 0 8px #00e6c0, 0 0 15px #00e6c0;
+@keyframes bgMove{
+    0%{background-position:0 50%;}
+    100%{background-position:300% 50%;}
 }
 
-/* blinking cursor */
-#typing::after{
-    content: "|";
-    margin-left: 6px;
-    animation: blink 1s infinite;
+
+/* profile */
+.profile-pic{
+    width:150px;
+    border-radius:50%;
+    border:4px solid #00ffe7;
+    box-shadow:0 0 30px #00ffe7;
+    margin-bottom:20px;
 }
 
-/* cursor animation */
-@keyframes blink{
-    0%,100%{opacity:1;}
-    50%{opacity:0;}
+/* name */
+.name{
+    font-size:48px;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:8px;
+}
+
+/* typing text */
+.tagline{
+    font-size:22px;
+    color:#00ffe7;
+    min-height:30px;
+    margin-bottom:30px;
+}
+
+
+/* ================= CARD ================= */
+
+.hero-card{
+    background:rgba(255,255,255,.06);
+    backdrop-filter:blur(18px);
+    border-radius:22px;
+    padding:35px;
+    width:90%;
+    max-width:800px;
+    margin:auto;
+
+    box-shadow:
+        0 0 25px rgba(0,255,231,.25),
+        0 0 80px rgba(0,255,231,.15);
+
+    transition:.3s;
+}
+
+.hero-card:hover{
+    transform:translateY(-6px);
+    box-shadow:
+        0 0 35px rgba(0,255,231,.55),
+        0 0 120px rgba(0,255,231,.25);
+}
+
+/* subtitle */
+.hero-sub{
+    margin-bottom:25px;
+    font-size:18px;
+    opacity:.9;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-row{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:25px;
+}
+
+.contact-btn{
+    text-decoration:none;
+    color:white;
+    background:rgba(255,255,255,.08);
+    padding:10px 18px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.contact-btn:hover{
+    background:#00ffe7;
+    color:#000;
+    transform:translateY(-3px);
+}
+
+
+/* ================= BUTTONS ================= */
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+/* solid neon */
+.btn{
+    text-decoration:none;
+    background:#00ffe7;
+    color:#000;
+    padding:12px 22px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 0 18px #00ffe7;
+}
+
+/* outline */
+.btn-outline{
+    text-decoration:none;
+    color:#00ffe7;
+    border:2px solid #00ffe7;
+    padding:12px 22px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.btn-outline:hover{
+    background:#00ffe7;
+    color:#000;
+    box-shadow:0 0 18px #00ffe7;
+}
+
+
+/* mobile */
+@media(max-width:600px){
+    .name{font-size:34px;}
+    .hero-card{padding:25px;}
+}
+/* =========================================
+   🔥 ULTIMATE FUTURISTIC ANIMATED BACKGROUND
+   Gradient + Moving Glow + Tech Grid + Neon
+========================================= */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+
+    /* Animated gradient */
+    background: linear-gradient(
+        -45deg,
+        #0b1020,
+        #111827,
+        #0f172a,
+        #001a1a
+    );
+
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+}
+
+
+/* Gradient animation */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/* Neon moving glow */
+body::before {
+    content: "";
+    position: fixed;
+    width: 600px;
+    height: 600px;
+
+    background: radial-gradient(circle, rgba(0,255,200,0.25), transparent 70%);
+    border-radius: 50%;
+
+    animation: neonPulse 6s ease-in-out infinite alternate;
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+/* Glow movement */
+@keyframes neonPulse {
+    0% {
+        transform: translate(-10%, -10%) scale(1);
+        opacity: 0.6;
+    }
+    100% {
+        transform: translate(60vw, 60vh) scale(1.5);
+        opacity: 1;
+    }
+}
+
+/* ===== KILL HOVER GLOW COMPLETELY ===== */
+
+.project-card:hover,
+.hero-card:hover,
+.card:hover {
+
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25) !important;
+    background: rgba(20,30,35,0.65) !important;
+
+    transform: none !important;
+    filter: none !important;
+}
+
+/* remove any hover neon layers */
+.project-card:hover::before,
+.project-card:hover::after,
+.hero-card:hover::before,
+.hero-card:hover::after,
+.card:hover::before,
+.card:hover::after {
+    display: none !important;
+}
+.project-buttons {
+    margin-top: 12px;
+}
+
+.project-buttons .btn {
+    display: inline-block;
+    padding: 6px 14px;
+    margin-right: 8px;
+    font-size: 13px;
+    border-radius: 6px;
+    text-decoration: none;
+    background: #00ffc8;
+    color: #000;
+    transition: 0.3s ease;
+}
+
+.project-buttons .btn:hover {
+    background: #00cfa3;
+    transform: translateY(-2px);
+}
+
+.project-buttons .btn.outline {
+    background: transparent;
+    border: 1px solid #00ffc8;
+    color: #00ffc8;
+}
+
+.project-buttons .btn.outline:hover {
+    background: #00ffc8;
+    color: #000;
+}
+/*===== Disabled Demo Button ===== */
+
+.project-buttons .disabled {
+  opacity: 0.6;
+  pointer-events: none;
+  cursor: not-allowed;
+  background: transparent;
+  border: 1px solid #00ffc8;
+  color: #00ffc8;
+}
+
+.project-buttons .disabled:hover {
+  transform: none;
+  background: transparent;
+  box-shadow: none;
+}
+/* ===== Professional Disabled Demo Button ===== */
+
+.project-buttons {
+  margin-top: 14px;
+}
+
+.project-buttons .btn {
+  margin-right: 10px;
+}
+
+.project-buttons .disabled {
+  border: 1px solid rgba(0, 255, 200, 0.4);
+  color: rgba(0, 255, 200, 0.6);
+  background: transparent;
+  cursor: default;
+}
+
+.project-buttons .disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  align-items: stretch;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+/* ===== FINAL PROFESSIONAL PROJECT GRID ===== */
+
+.project-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)) !important;
+  gap: 30px !important;
+  align-items: stretch !important;
+}
+
+.project-card {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  grid-column: auto !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 255, 150, 0.15);
+}
+project-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 255, 170, 0.4);
+}
+/* ===== FORCE HOVER OVERRIDE FOR PROJECT CARDS ===== */
+
+section.card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease !important;
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+section.card:hover {
+    transform: translateY(-15px) scale(1.03) !important;
+    box-shadow: 
+        0 0 20px #00ffcc,
+        0 0 40px #00ffcc,
+        0 0 60px #00ffcc,
+        0 0 80px #00ffcc !important;
+}
+/* ===== FORCE MOVE COMPLETE PROJECT CARD INCLUDING CHILDREN ===== */
+
+.project-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease !important;
+}
+
+.project-card:hover {
+    transform: translateY(-15px) scale(1.03) !important;
+    box-shadow:
+        0 0 15px #00ffcc,
+        0 0 30px #00ffcc,
+        0 0 45px #00ffcc,
+        0 0 60px #00ffcc !important;
+}
+
+/* Remove any child transform reset */
+.project-card * {
+    transform: none !important;
+}
+/* ===== FIX PROJECT CARD HOVER BLOCK ISSUE ===== */
+
+.project-card {
+    position: relative !important;
+    z-index: 10 !important;
+    transition: transform 0.4s ease, box-shadow 0.4s ease !important;
+}
+
+.project-card:hover {
+    transform: translateY(-15px) scale(1.03) !important;
+    box-shadow:
+        0 0 20px #00ffcc,
+        0 0 40px #00ffcc,
+        0 0 60px #00ffcc !important;
+}
+
+/* Disable any overlay blocking hover */
+.project-card::before,
+.project-card::after {
+    pointer-events: none !important;
+}
+/* ===== FINAL NO-OVERLAP FIX ===== */
+
+.project-card {
+    transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: none !important;
+    box-shadow: 0 12px 30px rgba(0, 255, 200, 0.35);
+}
+/* FINAL PROJECT GRID FIX */
+
+.project-grid{
+    display:flex !important;
+    gap:22px !important;
+    justify-content:center !important;
+    align-items:stretch !important;
+    flex-wrap:nowrap !important;
+}
+
+.project-card{
+    width:32% !important;
+    min-width:0 !important;
+}
+/* ===== SIMPLE PROJECT ALIGN FIX ===== */
+
+.project-grid{
+    display:flex !important;
+
+    justify-content:center !important;
+
+    gap:25px !important;
+
+    flex-wrap:wrap !important;
+}
+
+.project-card{
+    width:370px !important;
 }
