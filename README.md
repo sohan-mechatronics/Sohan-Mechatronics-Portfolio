@@ -106,28 +106,11 @@ https://linkedin.com/in/sohan-kumar-eng
 ## 🎯 Career Goals
 
 I aim to build a career in Robotics, Industrial Automation, PLC Programming, and Smart Engineering Systems while continuously developing practical and research-oriented skills.
-<table align="center">
-<tr>
-<td align="center">
-<img src="assets/github-qr.png" width="150"><br>
-<b>GitHub</b>
-</td>
+## 📱 Scan to Connect
 
-<td width="50"></td>
-
-<td align="center">
-<img src="assets/linkedin-qr.png" width="150"><br>
-<b>LinkedIn</b>
-</td>
-
-<td width="50"></td>
-
-<td align="center">
-<img src="assets/portfolio-qr.png" width="150"><br>
-<b>Portfolio</b>
-</td>
-</tr>
-</table>
+| GitHub | LinkedIn | Portfolio |
+|:------:|:--------:|:---------:|
+| <img src="assets/github-qr.png" width="170"> | <img src="assets/linkedin-qr.png" width="170"> | <img src="assets/portfolio-qr.png" width="170"> |
 
 <p align="center">
 📲 <b>Scan any QR code to explore my work and connect with me.</b>
