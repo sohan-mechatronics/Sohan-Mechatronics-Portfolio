@@ -106,6 +106,35 @@ https://linkedin.com/in/sohan-kumar-eng
 ## 🎯 Career Goals
 
 I aim to build a career in Robotics, Industrial Automation, PLC Programming, and Smart Engineering Systems while continuously developing practical and research-oriented skills.
+To---
 
+## 📱 Scan to Connect
 
-⭐ If you find this project useful, feel free to star the repository.
+<p align="center">
+
+<a href="https://github.com/sohan-mechatronics">
+  <img src="assets/github-qr.png" alt="GitHub QR" width="170">
+</a>
+
+<a href="https://www.linkedin.com/in/sohan-kumar-eng">
+  <img src="assets/linkedin-qr.png" alt="LinkedIn QR" width="170">
+</a>
+
+<a href="https://sohan-mechatronics.github.io/Sohan-Mechatronics-Portfolio/">
+  <img src="assets/portfolio-qr.png" alt="Portfolio QR" width="170">
+</a>
+
+</p>
+
+<p align="center">
+<b>GitHub</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b>LinkedIn</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b>Portfolio</b>
+</p>
+
+---
+
+⭐ If you found this project useful, consider giving it a Star.
+
+Made with ❤️ by <b>Sohan Kumar</b>
+
