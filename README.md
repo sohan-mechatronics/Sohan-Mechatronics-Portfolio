@@ -151,6 +151,3 @@ I aim to build a career in Robotics, Industrial Automation, PLC Programming, and
 ⭐ **If you find this project useful, please consider giving it a ⭐ Star.**
 
 Made with ❤️ by **Sohan Kumar**
-
-
-⭐ If you find this project useful, feel free to star the repository.
