@@ -11,9 +11,8 @@
 <p align="center">
   Building innovative engineering projects, technical publications, and open-source learning resources.
 </p>
-
 ---
-# 🚀 Sohan Mechatronics Portfolio
+# 👨‍💻 Portfolio Overview
 
 Personal portfolio website showcasing my engineering journey, technical skills, projects, training, and career interests in **Mechatronics Engineering, Robotics, PLC, SCADA, Industrial Automation, and Electrical Engineering**.
 
