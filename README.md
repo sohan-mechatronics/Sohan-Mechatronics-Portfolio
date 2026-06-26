@@ -1,7 +1,18 @@
 <p align="center">
-  <img src="assets/banner.png" alt="Portfolio Website Banner" width="100%">
+  <img src="assets/banner.png" alt="Sohan Kumar Portfolio Website Banner" width="100%">
 </p>
-----
+
+<h1 align="center">🌐 SOHAN KUMAR | PORTFOLIO WEBSITE</h1>
+
+<p align="center">
+  <strong>Electrical Engineer • Mechatronics Engineer • Robotics • Industrial Automation • AI & Python</strong>
+</p>
+
+<p align="center">
+  Building innovative engineering projects, technical publications, and open-source learning resources.
+</p>
+
+---
 # 🚀 Sohan Mechatronics Portfolio
 
 Personal portfolio website showcasing my engineering journey, technical skills, projects, training, and career interests in **Mechatronics Engineering, Robotics, PLC, SCADA, Industrial Automation, and Electrical Engineering**.
