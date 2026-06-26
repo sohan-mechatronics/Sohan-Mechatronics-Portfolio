@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.png" alt="Portfolio Website Banner" width="100%">
+</p>
+----
 # 🚀 Sohan Mechatronics Portfolio
 
 Personal portfolio website showcasing my engineering journey, technical skills, projects, training, and career interests in **Mechatronics Engineering, Robotics, PLC, SCADA, Industrial Automation, and Electrical Engineering**.
@@ -7,10 +11,37 @@ Personal portfolio website showcasing my engineering journey, technical skills, 
 
 Hi, I'm **Sohan Kumar**, a Mechatronics Engineering student with a Diploma in Electrical Engineering. I am passionate about Robotics, Automation, Artificial Intelligence, Industrial Control Systems, and emerging technologies.
 
-### Education
+# 🎓 Education
 
-* Diploma in Electrical Engineering
-* B.E Mechatronics Engineering Student
+### 🏛 Bachelor of Engineering (B.E.) – Mechatronics Engineering
+**Chandigarh University, Mohali, Punjab**
+
+📅 **2025 – Present**
+
+- Pursuing B.E. in Mechatronics Engineering (Lateral Entry)
+- Focusing on Robotics, Industrial Automation, Control Systems, AI & Python
+- Building engineering projects, technical publications, and open-source repositories
+
+---
+
+### ⚡ Diploma in Electrical Engineering
+**Government Polytechnic Katihar, Bihar**
+
+📅 **2022 – 2025**
+
+📊 **Percentage:** **72.08%**
+
+- Strong foundation in Electrical Machines, Power Systems, PLC, Sensors, Industrial Automation and Robotics
+- Major Project: **Autonomous Hybrid Robot**
+
+---
+
+### 🏫 Matriculation (10th)
+**R.K.S.S. Lakhan High School, Begusarai, Bihar**
+
+📅 **2018**
+
+📊 **Percentage:** **60%**
 
 ### Areas of Interest
 
