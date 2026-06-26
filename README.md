@@ -106,35 +106,32 @@ https://linkedin.com/in/sohan-kumar-eng
 ## 🎯 Career Goals
 
 I aim to build a career in Robotics, Industrial Automation, PLC Programming, and Smart Engineering Systems while continuously developing practical and research-oriented skills.
-To---
+<table align="center">
+<tr>
+<td align="center">
+<img src="assets/github-qr.png" width="150"><br>
+<b>GitHub</b>
+</td>
 
-## 📱 Scan to Connect
+<td width="50"></td>
 
-<p align="center">
+<td align="center">
+<img src="assets/linkedin-qr.png" width="150"><br>
+<b>LinkedIn</b>
+</td>
 
-<a href="https://github.com/sohan-mechatronics">
-  <img src="assets/github-qr.png" alt="GitHub QR" width="170">
-</a>
+<td width="50"></td>
 
-<a href="https://www.linkedin.com/in/sohan-kumar-eng">
-  <img src="assets/linkedin-qr.png" alt="LinkedIn QR" width="170">
-</a>
-
-<a href="https://sohan-mechatronics.github.io/Sohan-Mechatronics-Portfolio/">
-  <img src="assets/portfolio-qr.png" alt="Portfolio QR" width="170">
-</a>
-
-</p>
-
-<p align="center">
-<b>GitHub</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<b>LinkedIn</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<td align="center">
+<img src="assets/portfolio-qr.png" width="150"><br>
 <b>Portfolio</b>
+</td>
+</tr>
+</table>
+
+<p align="center">
+📲 <b>Scan any QR code to explore my work and connect with me.</b>
 </p>
 
----
 
-⭐ If you found this project useful, consider giving it a Star.
-
-Made with ❤️ by <b>Sohan Kumar</b>
-
+⭐ If you find this project useful, feel free to star the repository.
